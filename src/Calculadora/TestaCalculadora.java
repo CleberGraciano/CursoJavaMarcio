@@ -1,3 +1,5 @@
+package Calculadora;
+
 public class TestaCalculadora {
     public static void main(String[] args) {
         Calculadora calculadoraSoma = new Calculadora();
@@ -7,6 +9,12 @@ public class TestaCalculadora {
         calculadoraSoma.calcular();
 
         //Criar mais objetos subtração - Divisão - Multiplicação
+
+        Calculadora calculadoraSub = new Calculadora();
+        calculadoraSoma.entrada1=20;
+        calculadoraSoma.entrada2=10;
+        calculadoraSoma.operadorLogico="-";
+        calculadoraSoma.calcular();
 
 
 
