@@ -13,12 +13,14 @@ public class Funcionario {
 
     public void calcularSalario(double valorHora, int quantidadeHoras, double comissao){
         double salario = valorHora*quantidadeHoras;
-        System.out.println("Salario: "+(salario*(comissao/100))+salario);
+        double retornaRemuneracao = (salario*(comissao/100))+salario;
+        System.out.println("Salario: "+ retornaRemuneracao);
     }
 
     public void calcularSalario(double valorHora, int quantidadeHoras, double comissao, double bonificacao){
         double salario = valorHora*quantidadeHoras;
-        System.out.println("Salario: "+ (salario*(comissao/100))+salario+bonificacao);
+        double retornaRemuneracao = (salario*(comissao/100))+salario+bonificacao;
+        System.out.println("Salario: "+ retornaRemuneracao);
     }
 
 
