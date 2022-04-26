@@ -2,6 +2,7 @@ package PolimorfismoConta;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class Conta {
 
@@ -51,14 +52,35 @@ public class Conta {
         return saldo;
     }
 
-    public double depositar(Conta contaDestino, double valorDeposito){
-        return contaDestino.saldo = contaDestino.saldo+valorDeposito;
+    public double depositar(double valorDeposito){
+        return saldo = saldo+valorDeposito;
     }
 
-    public double tranferir(Conta contaOrigem, Conta contaDestino, double valorTransferencia){
+    public double tranferir(Conta contaDestino, double valorTransferencia){
         contaDestino.saldo = contaDestino.saldo + valorTransferencia;
-        return contaOrigem.saldo = contaOrigem.saldo - valorTransferencia;
+        return saldo = saldo - valorTransferencia;
 
+    }
+
+    public double pix(List<Conta> contas, String chavePix, double valorPix){
+        Conta contaDestino = buscarContaPix(chavePix, contas);
+        if (contaDestino.getCpf()!=null) {
+            contaDestino.saldo = contaDestino.saldo + valorPix;
+            return saldo = saldo - valorPix;
+        }else {
+            return 0;
+        }
+
+    }
+
+    public Conta buscarContaPix(String chavePix, List<Conta> contas){
+        Conta c = new Conta();
+        for (Conta conta: contas) {
+            if (conta.getCpf().equals(chavePix)){
+                c = conta;
+            }
+        }
+        return c;
     }
 
     public void exibirExtrato(){

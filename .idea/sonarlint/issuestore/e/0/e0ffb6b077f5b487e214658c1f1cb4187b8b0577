@@ -1,0 +1,17 @@
+
+S	java:S106W"9Replace this use of System.out or System.err by a logger.(¬ίϊÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(‹­—ψÿÿÿÿ
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(¦ε° 
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(³…Ιό
+N	java:S106["9Replace this use of System.out or System.err by a logger.(άχ‡
+S	java:S106\"9Replace this use of System.out or System.err by a logger.(ό€Ύώÿÿÿÿ
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(®®ξ―ÿÿÿÿÿ
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬θύÿÿÿÿ
+D
+java:S11218".Extract the assignment out of this expression.(…ΘΫ
+D
+java:S1121=".Extract the assignment out of this expression.(ά±ξª
+D
+java:S1121E".Extract the assignment out of this expression.(–½Ρ•
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…†™ώÿÿÿÿ
